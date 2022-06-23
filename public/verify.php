@@ -1,6 +1,14 @@
 <?php
 date_default_timezone_set("Asia/Tehran");
 session_start();
+
+// check for session expires
+if(time() > (int)($_SESSION['date'] ?? 0) + 30*60){
+    session_destroy();
+    header('Location: /');
+    exit;
+}
+
 include __DIR__ . '/../files.php';
 
 $params = [
@@ -202,6 +210,7 @@ $result = json_decode($result, true);
                         <?php 
                         if ( in_array($result['order_id'], [1,2,3,4,5,6,7,8,9,10]) ): 
                             $_SESSION['validated'][] = $result['order_id'];
+                            $_SESSION['date'] = time();
                         ?>
                             <div class="d-flex justify-content-center my-5">
                                 <div class="border p-4 rounded text-center">
@@ -211,6 +220,9 @@ $result = json_decode($result, true);
                                     </div>
                                     <a href="/download.php?id=<?php echo $result['order_id']?>" class="btn btn-success mt-5">دانلود فایل</a>
                                 </div>
+                            </div>
+                            <div class="text-center text-primary h5 my-5">
+                                لینک‌های دانلود به مدت ۳۰ دقیقه (از آخرین پرداخت) برای شما فعال خواهند بود.
                             </div>
                         <?php endif; ?>
                         <div class="text-center">

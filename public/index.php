@@ -1,3 +1,7 @@
+<?php 
+include __DIR__ . '/../files.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fa">
 
@@ -163,15 +167,16 @@
         <div id="brands" class="brand-bg">
             <div class="container">
                 <div class="row">
+                    <?foreach($files as $id => $filename):?>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=1">
+                        <a href="/request.php?order_id=<?php echo $id ?>">
                             <div class="brand_box">
-                                <img src="images/1.webp" alt="img" />
+                                <img src="images/<?php echo $id ?>.webp" alt="img" />
                                 <div>
                                     <h3 class="red">1000</h3>
                                     تومان
                                 </div>
-                                <span>گوشی موبایل</span>
+                                <span><?php echo $filename ?></span>
                                 <i><img src="images/star.png"/></i>
                                 <i><img src="images/star.png"/></i>
                                 <i><img src="images/star.png"/></i>
@@ -179,150 +184,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=2">
-                            <div class="brand_box">
-                                <img src="images/2.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=3">
-                            <div class="brand_box">
-                                <img src="images/3.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=4">
-                            <div class="brand_box">
-                                <img src="images/4.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=5">
-                            <div class="brand_box">
-                                <img src="images/5.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=6">
-                            <div class="brand_box">
-                                <img src="images/6.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=7">
-                            <div class="brand_box">
-                                <img src="images/7.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=8">
-                            <div class="brand_box">
-                                <img src="images/8.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="/request.php?order_id=9">
-                            <div class="brand_box">
-                                <img src="images/9.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
-                        <a href="/request.php?order_id=10">
-                            <div class="brand_box">
-                                <img src="images/10.webp" alt="img" />
-                                <div>
-                                    <h3 class="red">1000</h3>
-                                    تومان
-                                </div>
-                                <span>گوشی موبایل</span>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                                <i><img src="images/star.png"/></i>
-                            </div>
-                        </a>
-                    </div>
+                    <?endforeach;?>
                     <div class="col-md-12">
                         <a class="read-more">دیدن موارد بیشتر</a>
                     </div>
