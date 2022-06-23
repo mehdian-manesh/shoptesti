@@ -196,10 +196,10 @@ $result = json_decode($result, true);
                                 </li>
                             </ul>
                         </div>
-                        <?php if ( in_array($result['order_id'], [1,2,3,4,5,6]) ): ?>
+                        <?php if ( in_array($result['order_id'], [1,2,3,4,5,6,7,8,9,10]) ): ?>
                             <div class="d-flex justify-content-center my-5">
                                 <div class="border p-4 rounded">
-                                    <img src="images/<?php echo $result['order_id']?>.png" alt="img" />
+                                    <img src="images/<?php echo $result['order_id']?>.webp" alt="img" height="200px"/>
                                     <div class="text-center">گوشی موبایل</div>
                                 </div>
                             </div>

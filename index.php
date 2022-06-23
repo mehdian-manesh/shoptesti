@@ -124,28 +124,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="second-slide" src="images/banner.jpg" alt="Second slide">
+                    <img class="third-slide" src="images/banner1.png" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption relative" dir="rtl" style="text-align: right">
                             <span>جدیدترین گوشی‌های موبایل</span>
-                            <h1>تا ۲۵٪ تخفیف!</h1>
-                            <p>جدیدترین مدل‌های تلفن همراه را در اینجا با تخفیف‌های فوق‌العاده پیدا می‌کنید!</p>
-                            <a class="buynow" href="#brands">خرید</a>
-                            <ul class="social_icon">
-                                <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="third-slide" src="images/banner.jpg" alt="Third slide">
-                    <div class="container">
-                        <div class="carousel-caption relative" dir="rtl" style="text-align: right">
-                            <span>جدیدترین گوشی‌های موبایل</span>
-                            <h1>تا ۲۵٪ تخفیف!</h1>
-                            <p>جدیدترین مدل‌های تلفن همراه را در اینجا با تخفیف‌های فوق‌العاده پیدا می‌کنید!</p>
+                            <h1>تخفیف‌های باورنکردنی!</h1>
+                            <p>جدیدترین مدل‌های تلفن همراه را در اینجا جستجو کنید</p>
                             <a class="buynow" href="#brands">خرید</a>
                             <ul class="social_icon">
                                 <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
@@ -182,7 +166,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <a href="/request.php?order_id=1">
                             <div class="brand_box">
-                                <img src="images/1.png" alt="img" />
+                                <img src="images/1.webp" alt="img" />
                                 <div>
                                     <h3 class="red">1000</h3>
                                     تومان
@@ -198,7 +182,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <a href="/request.php?order_id=2">
                             <div class="brand_box">
-                                <img src="images/2.png" alt="img" />
+                                <img src="images/2.webp" alt="img" />
                                 <div>
                                     <h3 class="red">1000</h3>
                                     تومان
@@ -214,7 +198,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <a href="/request.php?order_id=3">
                             <div class="brand_box">
-                                <img src="images/3.png" alt="img" />
+                                <img src="images/3.webp" alt="img" />
                                 <div>
                                     <h3 class="red">1000</h3>
                                     تومان
@@ -227,10 +211,10 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <a href="/request.php?order_id=4">
                             <div class="brand_box">
-                                <img src="images/4.png" alt="img" />
+                                <img src="images/4.webp" alt="img" />
                                 <div>
                                     <h3 class="red">1000</h3>
                                     تومان
@@ -243,10 +227,74 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <a href="/request.php?order_id=5">
                             <div class="brand_box">
-                                <img src="images/5.png" alt="img" />
+                                <img src="images/5.webp" alt="img" />
+                                <div>
+                                    <h3 class="red">1000</h3>
+                                    تومان
+                                </div>
+                                <span>گوشی موبایل</span>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
+                        <a href="/request.php?order_id=6">
+                            <div class="brand_box">
+                                <img src="images/6.webp" alt="img" />
+                                <div>
+                                    <h3 class="red">1000</h3>
+                                    تومان
+                                </div>
+                                <span>گوشی موبایل</span>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
+                        <a href="/request.php?order_id=7">
+                            <div class="brand_box">
+                                <img src="images/7.webp" alt="img" />
+                                <div>
+                                    <h3 class="red">1000</h3>
+                                    تومان
+                                </div>
+                                <span>گوشی موبایل</span>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
+                        <a href="/request.php?order_id=8">
+                            <div class="brand_box">
+                                <img src="images/8.webp" alt="img" />
+                                <div>
+                                    <h3 class="red">1000</h3>
+                                    تومان
+                                </div>
+                                <span>گوشی موبایل</span>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                                <i><img src="images/star.png"/></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
+                        <a href="/request.php?order_id=9">
+                            <div class="brand_box">
+                                <img src="images/9.webp" alt="img" />
                                 <div>
                                     <h3 class="red">1000</h3>
                                     تومان
@@ -260,9 +308,9 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
-                        <a href="/request.php?order_id=6">
+                        <a href="/request.php?order_id=10">
                             <div class="brand_box">
-                                <img src="images/6.png" alt="img" />
+                                <img src="images/10.webp" alt="img" />
                                 <div>
                                     <h3 class="red">1000</h3>
                                     تومان
