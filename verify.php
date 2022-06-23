@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("Asia/Tehran");
 $params = [
     'id' => $_POST['id'] ?? 0,
     'order_id' => $_POST['order_id'] ?? 0,
@@ -138,21 +139,26 @@ $result = json_decode($result, true);
         <div class="container" dir="rtl" style="text-align: right">
             <?php if ($err): ?>
                 <div class="card rounded border-danger">
+
                     <div class="card-title">
                         <h2 class="text-center bg-danger">خطا در اتصال به درگاه پرداخت</h2>
                     </div>
-                    <div class="card-body d-flex justify-content-center">
+                    
+                    <div class="card-body justify-content-center">
                         <div class="alert alert-danger" role="alert">
                             <?php echo $err; ?>
                         </div>        
                     </div>
+
                 </div>
             <?php elseif ($result['status'] != 100): ?>
                 <div class="card rounded border-danger">
+
                     <div class="card-title">
                         <h2 class="text-center bg-danger">خطا در انجام تراکنش!</h2>
                     </div>
-                    <div class="card-body d-flex justify-content-center">
+
+                    <div class="card-body justify-content-center">
                         <div class="alert alert-danger" role="alert">
                             پیغام سیستم:
                             <div>
@@ -160,6 +166,7 @@ $result = json_decode($result, true);
                             </div>
                         </div>
                     </div>
+
                 </div>
             <?php else: ?>
                 <div class="card rounded border-success">
@@ -168,7 +175,7 @@ $result = json_decode($result, true);
                         <h2 class="text-center bg-success">پرداخت با موفقیت انجام شد</h2>
                     </div>
 
-                    <div class="card-body d-flex justify-content-center">
+                    <div class="card-body justify-content-center">
                         <div class="alert alert-success" role="alert">
                             <ul>
                                 <li>
@@ -184,31 +191,30 @@ $result = json_decode($result, true);
                                     <?php echo $result['payment']['card_no']; ?>
                                 </li>
                                 <li>
-                                    تاریخ پرداخت:
-                                    <?php echo date('Y-D-M H:i:s', $result['payment']['date']); ?>
+                                     زمان پرداخت:
+                                    <?php echo date('H:i:s', $result['payment']['date']); ?>
                                 </li>
                             </ul>
                         </div>
-                        <?php if ( in_array($result['order_id'], [1,2,3,4]) ): ?>
-                            <div class="row">
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                                    <div class="brand_box">
-                                        <img src="images/<?php echo $result['order_id']?>.png" alt="img" />
-                                        <span>گوشی موبایل</span>
-                                    </div>
+                        <?php if ( in_array($result['order_id'], [1,2,3,4,5,6]) ): ?>
+                            <div class="d-flex justify-content-center my-5">
+                                <div class="border p-4 rounded">
+                                    <img src="images/<?php echo $result['order_id']?>.png" alt="img" />
+                                    <div class="text-center">گوشی موبایل</div>
                                 </div>
                             </div>
                         <?php endif; ?>
-                        <div>
+                        <div class="text-center">
                             <i>از خرید شما متشکریم!</i>
-                            <br>
-                            <a href="/" class="btn btn-primary">بازگشت به صفحه اصلی</a>
                         </div>
                     </div>
                 </div>
             <?php endif; ?>
+            <div class="text-center">
+                <a href="/" class="btn btn-primary mt-3">بازگشت به صفحه اصلی</a>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
     <!-- end Payment receipt -->
 
