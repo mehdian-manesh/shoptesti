@@ -17,8 +17,6 @@
 </html> -->
 
 <?php
-session_start();
-
 $jsonData = json_encode([
     'order_id' => 100,
     'amount' => 10000,
@@ -48,13 +46,12 @@ curl_setopt_array($curl, [
 
 $result = curl_exec($curl);
 $err = curl_error($curl);
-// $result = json_decode($result, true, JSON_PRETTY_PRINT);
 curl_close($curl);
+
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
     $idpay = json_decode($result, true);
-    $_SESSION['idpay'] = $idpay;
     header('Location: '.$idpay['link']);
 }
 ?>
