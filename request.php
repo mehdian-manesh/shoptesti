@@ -1,6 +1,10 @@
 <?php
+session_start();
+$order_id = $_GET['order_id'] ?? 100;
+$_SESSION['order_id'] = $order_id;
+
 $jsonData = json_encode([
-    'order_id' => $_GET['order_id'] ?? 100,
+    'order_id' => $order_id,
     'amount' => 10000,
     'name' => 'حمید حمیدی',
     'phone' => '09378871187',

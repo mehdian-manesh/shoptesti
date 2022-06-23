@@ -1,5 +1,8 @@
 <?php
 date_default_timezone_set("Asia/Tehran");
+session_start();
+include __DIR__ . '/../files.php';
+
 $params = [
     'id' => $_POST['id'] ?? 0,
     'order_id' => $_POST['order_id'] ?? 0,
@@ -196,11 +199,17 @@ $result = json_decode($result, true);
                                 </li>
                             </ul>
                         </div>
-                        <?php if ( in_array($result['order_id'], [1,2,3,4,5,6,7,8,9,10]) ): ?>
+                        <?php 
+                        if ( in_array($result['order_id'], [1,2,3,4,5,6,7,8,9,10]) ): 
+                            $_SESSION['validated'][] = $result['order_id'];
+                        ?>
                             <div class="d-flex justify-content-center my-5">
-                                <div class="border p-4 rounded">
+                                <div class="border p-4 rounded text-center">
                                     <img src="images/<?php echo $result['order_id']?>.webp" alt="img" style="height: 200px;"/>
-                                    <div class="text-center">گوشی موبایل</div>
+                                    <div class="text-center">
+                                        <?php echo $files[$result['order_id']]; ?>
+                                    </div>
+                                    <a href="/download.php?id=<?php echo $result['order_id']?>" class="btn btn-success mt-5">دانلود فایل</a>
                                 </div>
                             </div>
                         <?php endif; ?>
