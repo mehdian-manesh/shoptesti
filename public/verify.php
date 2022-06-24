@@ -2,13 +2,6 @@
 date_default_timezone_set("Asia/Tehran");
 session_start();
 
-// check for session expires
-if(time() > (int)($_SESSION['date'] ?? 0) + 30*60){
-    session_destroy();
-    header('Location: /');
-    exit;
-}
-
 include __DIR__ . '/../files.php';
 
 $params = [
